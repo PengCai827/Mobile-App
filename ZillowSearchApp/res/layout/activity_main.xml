@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Search Your Property Here"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F0AD54"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/viewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="Address *:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F0AD54" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Street Address"
+        android:padding="5dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/empty1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="This field is required"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/viewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="City *:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F0AD54" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="City"
+        android:padding="5dip" />
+
+    <TextView
+        android:id="@+id/empty2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="This field is required"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/viewState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:text="State *:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F0AD54" />
+
+    <Spinner
+        android:id="@+id/state"
+        android:layout_width="282dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:entries="@array/country_arrays"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/empty3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="This field is required"
+        android:textColor="#FF0000" />
+
+    <LinearLayout
+        android:id="@+id/btnLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@android:drawable/btn_default"
+            android:text="Search" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:src="@drawable/zillow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.29"
+        android:text="No exact match found -- Verify that the given address is correct."
+        android:textColor="#FF0000" />
+
+</LinearLayout>

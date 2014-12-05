@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp" >
+
+            <TableLayout
+                android:id="@+id/myTableLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.3dp"
+                    android:background="#000000" >
+
+                    <TextView
+                        android:id="@+id/tbl_txt1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="0dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:padding="10dip"
+                        android:text="See more details on Zillow:"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <!--
+                         <Button
+                        android:id="@+id/shareButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="@string/share"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                    -->
+
+                    <ImageButton
+                        android:id="@+id/shareButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:onClick="click"
+                        android:src="@drawable/fbicon"
+                        android:text="@string/share"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.3dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:height="30sp"
+                        android:padding="5dip"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:height="30sp"
+                        android:padding="5dip"
+                        android:textColor="#000000"
+                        android:textSize="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.3dp"
+                    android:background="#000000" >
+
+                    <TextView
+                        android:id="@+id/tbl_txt5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Property Type"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tbl_txt6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Year Built"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Lot Size"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Finished Area"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt13"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Bathrooms"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt14"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt15"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Bedrooms"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt16"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt17"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Tax Assessment Year"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt18"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt19"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Tax Assessment"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt20"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt21"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Last Sold Price"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt22"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt23"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Last Sold Date"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt24"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt25"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt26"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt27"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="30 Days Overall Change"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                   
+
+                    <TextView
+                        android:id="@+id/tbl_txt28"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt29"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="All Time Property Range"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt30"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <!-- Column 1 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt31"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt32"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <TextView
+                        android:id="@+id/tbl_txt33"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="left"
+                        android:padding="10dip"
+                        android:text="30 Days Rent Change "
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt34"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#F4F3FF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.5dp"
+                    android:background="#000000" >
+
+                    <TextView
+                        android:id="@+id/tbl_txt35"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="left"
+                        android:padding="10dip"
+                        android:text="All Time Rent Change "
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                    <!-- Column 3 -->
+
+                    <TextView
+                        android:id="@+id/tbl_txt36"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:height="35sp"
+                        android:padding="10dip"
+                        android:text="Column 3"
+                        android:textColor="#000000"
+                        android:textSize="11dp" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/TextViewBottomTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center|bottom"
+            android:padding="5dip"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+             >
+    </RelativeLayout>
+
+</LinearLayout>
