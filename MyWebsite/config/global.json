@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "WeToDo": {
+            "applicationId": "scrq331lx40lxt6ZOIKjxXRmA2dkav83XPYi6EEz", 
+            "masterKey": "Vl1EPcXLoP5cTE1zNVK3Tm73mVrCgzM3Dauu2eFa"
+        }, 
+        "_default": {
+            "link": "WeToDo"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.4"
+    }
+}

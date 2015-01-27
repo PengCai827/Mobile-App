@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//www.parsecdn.com/js/parse-1.3.4.min.js"></script>
+    <title>Sample App</title>
+      <script>
+            $(function() {
+                Parse.$ = jQuery;   
+            // Replace this line with the one on your Quickstart Guide Page
+            Parse.initialize("scrq331lx40lxt6ZOIKjxXRmA2dkav83XPYi6EEz", "3FNhMBUiaStRR75lVoKijR8TBrOKsCwjys33nPr2");
+ 
+        var TestObject = Parse.Object.extend("TestObject");
+        var testObject = new TestObject();
+    testObject.save({foo: "bar"}).then(function(object) {
+      alert("yay! it worked");
+    });
+ 
+});    
+        </script>
+  </head>
+  <body>
+    
+  </body>
+</html>
